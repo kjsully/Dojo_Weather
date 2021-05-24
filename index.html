@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo-Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>Dojo Weather</h1>
+            <a onclick= "alert('Loading weather report...')" href="#">Burbank</a>
+            <a onclick= "alert('Loading weather report...')" href="#">Chicago</a>
+            <a onclick= "alert('Loading weather report...')" href="#">Dallas</a>
+        </div>
+        <div class="nav2">
+            <div class="sanjose">
+                <h2>San Jose</h2>
+            </div>
+            <div class="menu">
+                <p>Show temperature in</p>
+                <select id="temp" onchange="convert(this)" name="temp">
+                    <option value="celsius">&#176; C</option>
+                    <option value="fahrenheit">&#176; F</option>
+                </select>
+            </div>
+        </div>
+            <hr>
+        <div class="main-content">
+            <div class="weather">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <h3><span id="todhi" class="hi">23.9&#176;</span><span id="todlow" class="low">18.3&#176;</span></h3>
+            </div>
+            <div class="weather">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <h3><span id="tomhi" class="hi">26.7&#176;</span><span id="tomlow" class="low">18.9&#176;</span></h3>
+            </div>
+            <div class="weather">
+                <h2>Friday</h2>
+                <img src="assets/some_clouds.png" alt="some clouds">
+                <p>some clouds</p>
+                <h3><span id="frihi" class="hi">20.6&#176;</span><span id="frilow" class="low">16.1&#176;</span></h3>
+            </div>
+            <div class="weather">
+                <h2>Saturday</h2>
+                <img src="assets/some_sun.png" alt="some script">
+                <p>some sun</p>
+                <h3><span id="sathi" class="hi">25.6&#176;</span><span id="satlow" class="low">21.1&#176;</span></h3>
+            </div>
+        </div>
+        <div id="alert">
+            <img src="assets/cookie.png" alt="cookie">
+            <p><span class="stop">Stop! Cookie time</span><br><span class= "we">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic.</span> <a href="#">Read more...</a></p>
+            <button id="accept" onclick="acceptCookies()">I Accept</button>
+        </div>
+
+
+    </div> 
+    
+    
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
